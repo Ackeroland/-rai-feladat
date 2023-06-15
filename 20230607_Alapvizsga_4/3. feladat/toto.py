@@ -14,12 +14,13 @@ print(f'3.2 feladat: Fogadási fordulók száma: {len(fordulok)}')
 
 osszes = 0
 for item in fordulok:
-    osszes += item.T13pl
-print(f'3.3 feladat: Telitalálatos szelvények száma: {osszes} darab')
+    osszes += item.T13p1
+print(f'3.3 feldat: Telitalálatos szelvények száma: {osszes} darab')
 
 for item in fordulok:
-    if 'X' in item.Eredmények:
-        print('3.4 feladat: Volt döntetlen forduló')
+    if 'X' not in item.Eredmények:
+        print('3.4 feladat: Volt döntetlen mentes forduló')
         break
 else:
-    print('3.4 feladat: Nem volt döntetlen mentes forduló.')
+    print('3.4 feladat: Nem volt döntetlen mentes forduló')
+
