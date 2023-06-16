@@ -29,7 +29,7 @@ print(f'\tEredmény: {leghosszabb_nevu.ido}')
 ferfi_ido_osszeg = 0
 ferfi_darab = 0
 for item in versenyzok:
-    if item.kategoria == 'ferfi' and item.szazalek == 100:
+    if item.kategoria == 'Ferfi' and item.szazalek == 100:
         ferfi_darab += 1
         ferfi_ido_osszeg += item.ido_oraban
-print(f'3.5 feladat: Férfi sportolók átlagos ideje: {ferfi_ido_osszeg/ferfi_darab}')
+print(f'3.5 feladat: Férfi sportolók átlagos ideje: {ferfi_ido_osszeg/ferfi_darab} óra')

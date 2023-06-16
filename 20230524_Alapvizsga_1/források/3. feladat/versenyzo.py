@@ -1,16 +1,11 @@
-class Versenyzo:
-    def __init__(self, row) -> None:
-        splitted = row.strip().split(';')
+class versenyzo:
+    def __init__(self, row):
+        splitted = row.split(';')
         self.nev = splitted[0]
-        self.rajtszam = splitted[1]
+        self.rajtszam = int(splitted[1])
         self.kategoria = splitted[2]
-        self.versenyido = splitted[3]
-        # self.versenyido = self.ido[1] + self.ido[2] * 60
-        self.tavSzazalek = int(splitted[4])
-    
-    def IdőÓrában(self):
-        splitted = self.versenyido.split(':')
-        ora = int(splitted[0])
-        perc = int(splitted[1])
-        masodperc = int(splitted[2])
-        return ora + perc/60 + masodperc/3600 
+        self.ido = splitted[3]
+        self.szazalek = int(splitted[4])
+
+        splitted_ido = self.ido.split(':')
+        self.ido_oraban = int(splitted_ido[0]) + int(splitted_ido[1])/60 + int(splitted_ido[2])/3600

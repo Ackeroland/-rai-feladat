@@ -1,5 +1,5 @@
 class Repulo:
-    def __init__(self,row) -> None:
+    def __init__(self, row) -> None:
         # típus;év;utas;személyzet;utazósebesség;felszállótömeg;fesztáv
         # Airbus A300;1972;220-336;3;911;142000;44,84
         splitted = row.split(';')
