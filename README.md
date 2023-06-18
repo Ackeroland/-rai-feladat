@@ -1,3 +1,3 @@
-# orai-feladat
+# weboldal
 
 kiralyagoston.github.io/gyakorlas
